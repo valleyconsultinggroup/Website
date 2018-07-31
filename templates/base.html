@@ -5,11 +5,30 @@
     <meta charset="utf-8">
     <meta name="author" content="Valley Consulting Group">
     <meta name="description" content="Non-profit management consulting form for leading companies in the Silicon Valley">
+    <!-- Viewport meta tag ensures website works on all devices + screen resolutions-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" type="text/css" href="/static/css/navigation-bar.css">
+    <script src="/static/js/navigation-bar.js"></script>
     <title>{% block page_title %}Home{% endblock page_title %} | Valley Consulting</title>
 </head>
 
 <body>
+    <nav id="global-nav" class="nav">
+        <div class="container">
+            <div class="pull-left">
+                <h1 class="site-title">Valley Consulting Group</h1>
+            </div>
+            <div class="pull-right">
+                <ul class="nav-list">
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Members</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div>
         <main>
             {% block content %}
@@ -17,6 +36,9 @@
             {% endblock content %}
         </main>
     </div>
+
+    <footer>
+    </footer>
 </body>
 
 </html>
