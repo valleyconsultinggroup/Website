@@ -22,6 +22,26 @@ markdown_manager = Markdown(app, extensions=['fenced_code'], output_format='html
 def index():
     return render_template('index.html', pages=pages)
 
+@app.route('/about/')
+def about():
+    return render_template('about.html')
+
+@app.route('/services/')
+def services():
+    return render_template('services.html')
+
+@app.route('/members/')
+def members():
+    return render_template('members.html')
+
+@app.route('/contact/')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/join/')
+def join():
+    return render_template('join.html')
+
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
