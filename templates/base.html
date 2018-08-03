@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="author" content="Valley Consulting Group">
     <meta name="description" content="Non-profit management consulting form for leading companies in the Silicon Valley">
-    <!-- Viewport meta tag ensures website works on all devices + screen resolutions-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
@@ -14,11 +13,22 @@
 </head>
 
 <body>
-    <main>
+    <div class="navigation-bar">
+        <img id="nav-logo" src="/static/images/Assets/VCGLogoWhite.png">
+        <ul>
+            <li><a href="{{ url_for("about") }}">About</a></li>
+            <li><a href="{{ url_for("services") }}">Services</a></li>
+            <li><a href="{{ url_for("members") }}">Members</a></li>
+            <li><a href="{{ url_for("contact") }}">Contact</a></li>
+            <li><a href="{{ url_for("join") }}">Join Us</a>/li>
+        </ul>
+    </div>
+
+    <div>
         {% block content %}
-        Default Content
+        <p>Default Content</p>
         {% endblock content %}
-    </main>
+    </div>
 </body>
 
 </html>
