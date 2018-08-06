@@ -7,28 +7,32 @@
     <meta name="description" content="Non-profit management consulting form for leading companies in the Silicon Valley">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
-    <script src="/static/js/navigation.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/content.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/navigation2.css">
+
     <title>{% block page_title %}Home{% endblock page_title %} | Valley Consulting</title>
 </head>
 
 <body>
-    <div class="navigation-bar">
+    <div class="header" id="myHeader">
         <img id="nav-logo" src="/static/images/Assets/VCGLogoWhite.png">
         <ul>
             <li><a href="{{ url_for("about") }}">About</a></li>
             <li><a href="{{ url_for("services") }}">Services</a></li>
             <li><a href="{{ url_for("members") }}">Members</a></li>
             <li><a href="{{ url_for("contact") }}">Contact</a></li>
-            <li><a href="{{ url_for("join") }}">Join Us</a>/li>
+            <li><a href="{{ url_for("join") }}">Join Us</a></li>
         </ul>
     </div>
 
-    <div>
+    <div class="content">
         {% block content %}
         <p>Default Content</p>
         {% endblock content %}
     </div>
+
+    <script src="/static/js/navigation.js"></script>
 </body>
 
 </html>
