@@ -1,38 +1,36 @@
 /* Style the header */
 .header {
-  background: clear;
-  color: white;
-  z-index: 1;
-  width: 100%;
-  position: fixed;
+    background: clear;
+    color: white;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 /** MARK: Scrolling CSS + Animations */
 
 /* Page content */
 .content {
-  padding: 0px;
+    left: 0;
+    position: absolute;
+    top: 0;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
-  top: 0;
-  background: black;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
+    background: black;
+    top: 0;
 }
 
 /** MARK: Header Image + List Organization */
 
 .header ul {
-    margin-top: 50px;
     margin-right: 20px;
+    margin-top: 50px;
     text-align: center;
     float: right;
-
 }
 
 .header li {

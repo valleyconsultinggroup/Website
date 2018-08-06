@@ -1,0 +1,21 @@
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Source Sans Pro", sans-serif;
+
+}
+
+.home-image-container {
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.home-image-container img {
+    filter: brightness(50%);
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}

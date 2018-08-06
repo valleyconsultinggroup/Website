@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <img style="width:100%;height:auto;z-index:-1;filter:brightness(50%);" src="/static/images/Home/HomePagePic1.jpg"/>
+<div class="home-image-container">
+    <img src="/static/images/Home/HomePagePic1.jpg"/>
+    <div class="centered">Valley Consulting Group</div>
+</div>
 
-  <h1>Hello World!</h1>
-  <p>The header will stick to the top when you reach its scroll position.</p>
-  <p>Scroll back up to remove the sticky effect.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<div style="text-align:center;">
+  <h1>What is Valley Consulting Group?</h1>
+  <p>Valley Consulting Group (VCG) is a UC Berkeley student-run, not-for-profit management consulting organization. We provide strategic solutions to vital business challenges faced by our clients. VCG is composed of intelligent, motivated UC Berkeley undergraduates looking to make an impact. Each project cycle, our teams take on a new slate of consulting engagements with leading technology companies in the Silicon Valley.</p>
+</div>
 {% endblock content %}
