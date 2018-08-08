@@ -1,7 +1,39 @@
 .footer {
     background-color: black;
-    bottom: 0;
     color: white;
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 0px;
     position: absolute;
+    width: 100%;
+    padding: 50px 50px 50px 100px;
+}
+
+.footer-fixed-image {
+    /* border: 1px solid red; */
+    margin: 1em 0;
     text-align: center;
+    width: 120px;
+}
+
+.footer-fixed-image span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.footer-fixed-image img {
+    vertical-align: middle;
+}
+
+.footer-fixed-description {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding-left: 10px;
+    width: 400px;
+}
+
+.footer-flex {
+    /* border: 1px solid blue; */
+    flex-grow: 1;
 }
