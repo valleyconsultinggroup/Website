@@ -20,7 +20,7 @@ markdown_manager = Markdown(app, extensions=['fenced_code'], output_format='html
 # Routes
 @app.route('/')
 def index():
-    return render_template('index.html', pages=pages)
+    return render_template('home.html', pages=pages)
 
 @app.route('/about/')
 def about():
