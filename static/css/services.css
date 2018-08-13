@@ -1,21 +1,20 @@
 .services-side-by-side {
     display: inline-block;
-    padding: 30px 80px 30px 80px;
+    padding: 30px 300px 30px 300px;
 }
 
 .services-image-description {
-    height: 40%;
-    padding: 0px 30px 0px 30px;
-    width: 40%;
+    height: 47%;
+    padding: 0px 20px 0px 20px;
+    width: 47%;
 }
 
 .services-line {
-    border-bottom: 1px solid black;
-    margin-left: 80px;
-    margin-right: 80px;
+    border-bottom: 1px solid gray;
+    margin: 30px 300px 30px 300px;
 }
 
 .services-image-testimonials {
     padding: 0px 30px 0px 30px;
-    float:left;
+    float: left;
 }
