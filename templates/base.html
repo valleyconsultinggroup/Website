@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/footer.css">
     <link rel="stylesheet" type="text/css" href="/static/css/footer-icons.css">
     <link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/services.css">
     <link href="/static/images/favicon.ico" rel="shortcut icon">
 
     <title>{% block page_title %} Base {% endblock page_title %} | Valley Consulting</title>
@@ -19,7 +20,9 @@
 
 <body>
     <div class="header" id="myHeader">
-        <img id="nav-logo" src="/static/images/Assets/VCGLogoWhite.png">
+        <a href="{{ url_for("home") }}">
+            <img id="nav-logo" src="/static/images/Assets/VCGLogoWhite.png">
+        </a>
         <ul>
             <li><a href="{{ url_for("about") }}">About</a></li>
             <li><a href="{{ url_for("services") }}">Services</a></li>

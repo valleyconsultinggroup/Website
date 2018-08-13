@@ -1,0 +1,21 @@
+.services-side-by-side {
+    display: inline-block;
+    padding: 30px 80px 30px 80px;
+}
+
+.services-image-description {
+    height: 40%;
+    padding: 0px 30px 0px 30px;
+    width: 40%;
+}
+
+.services-line {
+    border-bottom: 1px solid black;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.services-image-testimonials {
+    padding: 0px 30px 0px 30px;
+    float:left;
+}
