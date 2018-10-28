@@ -1,0 +1,11 @@
+.row-contact {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.col-contact {
+    flex: 25%;
+    padding: 5px;
+    text-align: center;
+}

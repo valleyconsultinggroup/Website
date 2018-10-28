@@ -17,6 +17,16 @@ pages = FlatPages(app)
 freezer = Freezer(app)
 markdown_manager = Markdown(app, extensions=['fenced_code'], output_format='html5',)
 
+# HTML Functions to make things smarter
+# TODO(john-b-yang): Figure out how to return HTML code w/ Python functions, Yattag?
+# Calling Functions within HTML: {{ get_exec_HTML("VP, Development", "John", "EECS", "john") }}
+
+def get_exec_HTML(title, name, major, email):
+    return u'<h1>Hello</h1>'
+
+def get_PL_HTML(name, major, email):
+    return u'<h1>World</h1>'
+
 # Routes
 @app.route('/')
 def index():
@@ -45,6 +55,9 @@ def contact():
 @app.route('/join/')
 def join():
     return render_template('join.html')
+
+app.jinja_env.globals.update(get_exec_HTML=get_exec_HTML)
+app.jinja_env.globals.update(get_PL_HTML=get_PL_HTML)
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
