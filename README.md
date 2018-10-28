@@ -5,6 +5,9 @@ Github Username: john-b-yang
 
 Landing Site: www.github.com/valleyconsultinggroup/website
 
+![Supported Python versions](https://img.shields.io/pypi/pyversions/Flask-Run.svg)
+![License](https://img.shields.io/pypi/l/Flask-Run.svg)
+
 ### Description
 Official repository containing code for VCG's website.
 
